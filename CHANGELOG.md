@@ -1,3 +1,3 @@
-## 0.0.1 - Alpha
+## 0.1.0 - Alpha
 
 - Initial take on Transmit Docksend support for Atom
