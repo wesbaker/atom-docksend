@@ -1,0 +1,21 @@
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Docksend'
+      'command': 'docksend:docksend'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'Docksend'
+      'submenu': [
+        {
+          'label': 'Docksend'
+          'command': 'docksend:docksend'
+        }
+      ]
+    ]
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "name": "Docksend",
+  "main": "./lib/docksend",
+  "version": "0.0.1",
+  "description": "Upload files using Transmit's Docksend",
+  "keywords": [
+    "transmit",
+    "docksend",
+    "ftp"
+  ],
+  "activationCommands": {
+    "atom-workspace": "docksend:docksend"
+  },
+  "repository": "https://github.com/wesbaker/atom-docksend",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "mac-open": ">=0.1.3"
+  }
+}
