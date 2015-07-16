@@ -1,3 +1,7 @@
+## 1.0.0
+
+- Bumping version number since it seems to be working
+
 ## 0.1.1
 
 - Improving the readme
