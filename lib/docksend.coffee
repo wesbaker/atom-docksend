@@ -17,7 +17,10 @@ module.exports = Docksend =
   docksend: ->
     editor = atom.workspace.getActiveTextEditor()
 
-    if editor.isModified()
-      editor.save()
+    if editor != undefined
+      if editor.isModified()
+        editor.save()
+    else  
+      editor = atom.workspace.getActivePaneItem()
 
     mac_open editor.getPath(), { a: "Transmit", g: true }
