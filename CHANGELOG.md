@@ -1,3 +1,7 @@
+## 1.0.1
+
+- Fixed a bug where images could not be uploaded (thanks to alejandroramirez)
+
 ## 1.0.0
 
 - Bumping version number since it seems to be working
