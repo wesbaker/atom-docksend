@@ -1,3 +1,7 @@
+## 1.1.0
+
+- Switching from mac-open to opener
+
 ## 1.0.1
 
 - Fixed a bug where images could not be uploaded (thanks to alejandroramirez)
