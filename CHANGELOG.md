@@ -1,6 +1,7 @@
 ## 1.2.0
 
 - Added the ability to Docksend an entire directory
+- Added options to upload related/minified files for Less, Sass, and Javascript
 
 ## 1.1.0
 

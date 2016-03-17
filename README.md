@@ -18,3 +18,7 @@ If you're using [Emmet](https://atom.io/packages/emmet), they have a keyboard sh
         'atom-text-editor:not([mini])':
             'ctrl-u': 'docksend:docksend'
             'ctrl-shift-u': 'docksend:docksendDirectory'
+
+## Settings
+
+You can optionally enable the uploading of related files for Less, Sass, and Minified Javascript. Also, you can supply alternative extensions in case you create additional files or name your created files differently.
