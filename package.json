@@ -9,7 +9,10 @@
     "ftp"
   ],
   "activationCommands": {
-    "atom-workspace": "docksend:docksend"
+    "atom-workspace": [
+      "docksend:docksend",
+      "docksend:docksendDirectory"
+    ]
   },
   "repository": "https://github.com/wesbaker/atom-docksend",
   "license": "MIT",

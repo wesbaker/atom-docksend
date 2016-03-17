@@ -4,6 +4,10 @@
       'label': 'Docksend'
       'command': 'docksend:docksend'
     }
+    {
+      'label': 'Docksend Directory'
+      'command': 'docksend:docksendDirectory'
+    }
   ]
 'menu': [
   {
@@ -14,6 +18,10 @@
         {
           'label': 'Docksend'
           'command': 'docksend:docksend'
+        }
+        {
+          'label': 'Docksend Directory'
+          'command': 'docksend:docksendDirectory'
         }
       ]
     ]

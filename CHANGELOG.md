@@ -1,3 +1,7 @@
+## 1.2.0
+
+- Added the ability to Docksend an entire directory
+
 ## 1.1.0
 
 - Switching from mac-open to opener
