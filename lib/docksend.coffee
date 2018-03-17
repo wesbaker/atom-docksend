@@ -2,7 +2,7 @@ opener = require 'opener'
 fs     = require 'fs'
 {CompositeDisposable} = require 'atom'
 
-module.exports = Docksend =
+module.exports = {
   subscriptions: null
   config:
     less:
@@ -44,7 +44,7 @@ module.exports = Docksend =
           title: 'Extensions of related Javascript files'
           type: 'string'
           default: '.min.js'
-
+  
   activate: (state) ->
     # Events subscribed to in atom's system can be easily cleaned up with a
     # CompositeDisposable
@@ -68,25 +68,25 @@ module.exports = Docksend =
   docksend: ->
     editor = @getEditor()
 
-    if atom.config.get('Docksend.less.enableUpload')
+    if atom.config.get('docksend.less.enableUpload')
       @uploadRelatedFiles(
         editor.getPath(),
         '.less',
-        atom.config.get('Docksend.less.extensions')
+        atom.config.get('docksend.less.extensions')
       )
-    if atom.config.get('Docksend.sass.enableUpload')
+    if atom.config.get('docksend.sass.enableUpload')
       @uploadRelatedFiles(
         editor.getPath(),
         '.scss',
-        atom.config.get('Docksend.sass.extensions')
+        atom.config.get('docksend.sass.extensions')
       )
-    if atom.config.get('Docksend.minifiedJavascript.enableUpload')
+    if atom.config.get('docksend.minifiedJavascript.enableUpload')
       @uploadRelatedFiles(
         editor.getPath(),
         '.js',
-        atom.config.get('Docksend.minifiedJavascript.extensions')
+        atom.config.get('docksend.minifiedJavascript.extensions')
       )
-
+    
     opener ['-a', 'Transmit', '-g', editor.getPath()]
 
   docksendDirectory: ->
@@ -125,3 +125,5 @@ module.exports = Docksend =
       editor = atom.workspace.getActivePaneItem()
 
     return editor
+    
+}
