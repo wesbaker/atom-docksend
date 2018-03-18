@@ -31,10 +31,23 @@ module.exports = {
           title: 'Extensions of related Sass files'
           type: 'string'
           default: '.css, .min.css'
+    css:
+      type: 'object'
+      title: 'Css'
+      order: 3
+      properties:
+        enableUpload:
+          title: 'Upload related Css files'
+          type: 'boolean'
+          default: false
+        extensions:
+          title: 'Extensions of related Css files'
+          type: 'string'
+          default: '.css.map, .min.css'
     minifiedJavascript:
       type: 'object'
       title: 'Minified Javascript'
-      order: 3
+      order: 4
       properties:
         enableUpload:
           title: 'Upload related Javascript files'
@@ -79,6 +92,12 @@ module.exports = {
         editor.getPath(),
         '.scss',
         atom.config.get('docksend.sass.extensions')
+      )
+    if atom.config.get('docksend.css.enableUpload')
+      @uploadRelatedFiles(
+        editor.getPath(),
+        '.css',
+        atom.config.get('docksend.css.extensions')
       )
     if atom.config.get('docksend.minifiedJavascript.enableUpload')
       @uploadRelatedFiles(
